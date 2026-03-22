@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B48FF"/>
+      <stop offset="100%" style="stop-color:#0078D4"/>
+    </linearGradient>
+  </defs>
+  <!-- 보라-파랑 그라디언트 배경 -->
+  <rect width="128" height="128" rx="28" fill="url(#bgC)"/>
+
+  <!-- 갈피(책갈피) + 번개/컨텍스트 스위치 느낌 -->
+  <!-- 메인 책갈피 리본 -->
+  <polygon points="36,14 92,14 92,100 64,82 36,100" fill="white" opacity="0.15"/>
+  <polygon points="40,14 88,14 88,100 64,82 40,100" fill="white" opacity="0.9"/>
+
+  <!-- 번개 모양 (빠른 전환) -->
+  <polygon points="68,32 56,60 66,60 60,96 76,62 65,62 74,32" fill="url(#bgC)"/>
+</svg>

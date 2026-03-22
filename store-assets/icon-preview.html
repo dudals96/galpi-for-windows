@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>갈피 아이콘 컨셉</title>
+  <style>
+    body { background: #1a1a1a; color: #e8e8e8; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 40px; }
+    h1 { font-size: 22px; margin-bottom: 8px; }
+    p { color: #888; margin-bottom: 40px; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 900px; }
+    .card {
+      background: #252525;
+      border-radius: 16px;
+      padding: 28px 20px;
+      text-align: center;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover { border-color: #0078D4; transform: translateY(-4px); }
+    .card.selected { border-color: #0078D4; background: #1a2a3a; }
+    .card img { width: 128px; height: 128px; margin-bottom: 16px; }
+    .label { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .desc { font-size: 12px; color: #888; line-height: 1.5; }
+    .sizes { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; }
+    .sizes img { border-radius: 8px; background: #333; }
+    .size-label { font-size: 10px; color: #666; margin-top: 4px; }
+    .section { margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>갈피 for Windows — 아이콘 컨셉</h1>
+  <p>마음에 드는 스타일을 선택해 주세요. 선택 후 세부 색상/형태 조정 가능합니다.</p>
+
+  <div class="grid">
+    <div class="card" onclick="select(this)">
+      <img src="icon-concepts/concept-A.svg" alt="A">
+      <div class="label">A — 클래식 책갈피</div>
+      <div class="desc">전통적인 책갈피 리본 형태.<br>직관적이고 이름과 1:1 매칭</div>
+    </div>
+
+    <div class="card" onclick="select(this)">
+      <img src="icon-concepts/concept-B.svg" alt="B">
+      <div class="label">B — 레이어드 카드</div>
+      <div class="desc">쌓인 탭/카드 형태.<br>컨텍스트 "묶음" 개념 표현</div>
+    </div>
+
+    <div class="card" onclick="select(this)">
+      <img src="icon-concepts/concept-C.svg" alt="C">
+      <div class="label">C — 번개 책갈피</div>
+      <div class="desc">책갈피 + 번개 조합.<br>"빠른 전환" 강조, 보라 그라디언트</div>
+    </div>
+
+    <div class="card" onclick="select(this)">
+      <img src="icon-concepts/concept-D.svg" alt="D">
+      <div class="label">D — 창 + 핀 조합</div>
+      <div class="desc">브라우저 창 + 📌 핀.<br>"탭 저장" 기능을 시각적으로 표현</div>
+    </div>
+  </div>
+
+  <!-- 실제 크기 미리보기 -->
+  <div style="margin-top:48px; max-width:900px;">
+    <h2 style="font-size:16px; margin-bottom:20px;">실제 크기 비교</h2>
+    <div style="display:flex; gap:48px; align-items:flex-end; flex-wrap:wrap;">
+      <div style="text-align:center">
+        <img src="icon-concepts/concept-A.svg" width="128" height="128" style="border-radius:28px">
+        <div class="size-label">128px (스토어)</div>
+      </div>
+      <div style="text-align:center">
+        <img src="icon-concepts/concept-A.svg" width="48" height="48" style="border-radius:10px">
+        <div class="size-label">48px (툴바)</div>
+      </div>
+      <div style="text-align:center">
+        <img src="icon-concepts/concept-A.svg" width="16" height="16" style="border-radius:3px">
+        <div class="size-label">16px (탭)</div>
+      </div>
+      <div style="background:#fff; padding:12px; border-radius:8px; text-align:center">
+        <img src="icon-concepts/concept-A.svg" width="48" height="48" style="border-radius:10px">
+        <div class="size-label" style="color:#333">밝은 배경</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function select(el) {
+      document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+    }
+  </script>
+</body>
+</html>

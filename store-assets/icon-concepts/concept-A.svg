@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- 배경: Windows 11 스타일 둥근 사각형 -->
+  <defs>
+    <linearGradient id="bgA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4"/>
+      <stop offset="100%" style="stop-color:#0050A0"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bgA)"/>
+
+  <!-- 책갈피 리본 (갈피 = bookmark) -->
+  <polygon points="40,18 88,18 88,98 64,80 40,98" fill="white" opacity="0.95"/>
+
+  <!-- 리본 위 핀 포인트 강조선 -->
+  <line x1="50" y1="35" x2="78" y2="35" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="50" y1="47" x2="72" y2="47" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="50" y1="59" x2="68" y2="59" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+</svg>

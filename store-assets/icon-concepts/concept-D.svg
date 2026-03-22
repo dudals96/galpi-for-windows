@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4"/>
+      <stop offset="100%" style="stop-color:#00BCF2"/>
+    </linearGradient>
+  </defs>
+  <!-- Windows 11 파랑 배경 -->
+  <rect width="128" height="128" rx="28" fill="url(#bgD)"/>
+
+  <!-- 창문(윈도우) 3개 + 책갈피 핀 조합 -->
+  <!-- 뒤 창 -->
+  <rect x="20" y="48" width="50" height="36" rx="6" fill="white" opacity="0.25"/>
+  <!-- 중간 창 -->
+  <rect x="30" y="38" width="50" height="36" rx="6" fill="white" opacity="0.4"/>
+  <!-- 앞 창 (메인) -->
+  <rect x="40" y="28" width="50" height="36" rx="6" fill="white"/>
+
+  <!-- 창 안 주소바 -->
+  <rect x="46" y="34" width="32" height="4" rx="2" fill="#0078D4" opacity="0.3"/>
+  <!-- 창 안 콘텐츠 라인 -->
+  <rect x="46" y="43" width="36" height="3" rx="1.5" fill="#0078D4" opacity="0.5"/>
+  <rect x="46" y="50" width="28" height="3" rx="1.5" fill="#0078D4" opacity="0.3"/>
+
+  <!-- 핀 (저장됨 표시) -->
+  <circle cx="84" cy="24" r="10" fill="#FFD700"/>
+  <text x="84" y="29" text-anchor="middle" font-size="13" fill="#333">📌</text>
+
+  <!-- 하단 탭 인디케이터 3개 -->
+  <rect x="30" y="72" width="16" height="5" rx="2.5" fill="white" opacity="0.5"/>
+  <rect x="52" y="72" width="16" height="5" rx="2.5" fill="white"/>
+  <rect x="74" y="72" width="16" height="5" rx="2.5" fill="white" opacity="0.5"/>
+
+  <!-- 갈피 리본 우측 하단 -->
+  <polygon points="90,75 108,75 108,112 99,104 90,112" fill="white" opacity="0.9"/>
+</svg>

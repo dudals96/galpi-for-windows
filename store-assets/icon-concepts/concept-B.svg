@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <!-- 어두운 배경 (다크모드 느낌) -->
+  <rect width="128" height="128" rx="28" fill="url(#bgB)"/>
+
+  <!-- 탭들을 쌓은 형태 (레이어드 카드) -->
+  <rect x="22" y="52" width="72" height="52" rx="8" fill="#2a2a4a" opacity="0.8"/>
+  <rect x="28" y="42" width="72" height="52" rx="8" fill="#3a3a6a" opacity="0.85"/>
+  <rect x="34" y="32" width="72" height="52" rx="8" fill="white" opacity="0.12"/>
+
+  <!-- 최상위 카드 (밝은 카드) -->
+  <rect x="34" y="32" width="72" height="52" rx="8" fill="#0078D4"/>
+
+  <!-- 카드 내 컨텍스트 아이콘 -->
+  <!-- 핀 포인트 -->
+  <circle cx="58" cy="53" r="6" fill="white"/>
+  <line x1="58" y1="59" x2="58" y2="72" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 텍스트 라인들 -->
+  <rect x="70" y="50" width="24" height="3" rx="1.5" fill="white" opacity="0.8"/>
+  <rect x="70" y="58" width="18" height="3" rx="1.5" fill="white" opacity="0.5"/>
+  <rect x="70" y="66" width="20" height="3" rx="1.5" fill="white" opacity="0.5"/>
+</svg>
